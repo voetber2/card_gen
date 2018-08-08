@@ -6,9 +6,9 @@ arcana_lst = ("conscience","bard","magician", "healer", "fighter","sea","field",
 
 ##Generate numbers
 def num_color():
-    return randint(2,7)
+    return randint(0,5)
 def num_card():
-    return randint(1,12) + randint(1,10)
+    return randint(0,len(arcana_lst)-1)
 
 ##Link numbers and dictionary
 def return_card(n_color, n_card):
